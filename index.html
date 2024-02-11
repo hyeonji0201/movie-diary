@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김현지의 영화일기</title>
+        <meta charset="UTF-8">
+        <style>
+            #grid{
+                display: grid;
+                grid-template-columns: 220px 1fr;
+            }
+            a{
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: black;
+            }
+            p{
+                margin: 0px;
+                padding: 30px;
+            }
+            
+        </style>
+    </head>
+    <body style="margin: 0px;">
+        <script>
+            function btn() {
+                document.getElementById("notice1").innerHTML = "[ 1. 이 사이트는 2024년 2월 11일에 제작 시작되어 2월 이전에 감상한 영화들은 기록되지 않습니다. ]";
+                document.getElementById("notice2").innerHTML = "[ 2. 김현지의 영화일기에는 약간의 스포일러가 포홤되어 있을 수 있습니다. ]";
+                document.getElementById("notice3").innerHTML = "[ 3. 김현지의 영화일기에는 주관적인 견해가 포함되어 있을 수 있습니다. ]";
+            }
+        </script>
+        <div id="grid">
+            <p style="padding: 10px; margin: 0px; border-right: gray 1px solid; min-height: 800px;"><img src="프로필.png" width="200" style="padding-bottom: 5px;">
+                <a href="index.html" style="font-size: 20px; border-bottom: 1px gray solid;">김현지의 영화일기</a>
+                <br><br><br>
+                <a href="1.html" style="font-size: 16px;">1. 웡카</a>
+                <a style="font-size: 10px; color: gray;">2024.2.10</a>
+                <br><br><a href="2.html" style="font-size: 16px;">2. 추가예정</a>
+                <a style="font-size: 10px; color: gray;">2024.x.xx</a>
+            </p>
+            <p style="line-height: 2;">이곳은 '김현지의 영화일기'입니다
+                <br>즉, 김현지가 감상한 영화를 기록하는 사이트입니다
+                <br>좌측의 영화 목록에서 원하는 영화일기를 클릭해주세요
+                <br><button onclick="btn()">주의사항</button>
+                <input type="checkbox">본 사용자는 주의사항을 숙지하였습니다.
+                <br><a style="padding-left: 0px;" id="notice1"></a>
+                <br><a style="padding-left: 0px;" id="notice2"></a>
+                <br><a style="padding-left: 0px;" id="notice3"></a>
+            </p>
+        </div>
+    </body>
+</html>
